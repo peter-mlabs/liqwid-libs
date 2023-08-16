@@ -2,12 +2,43 @@
 
 This format is based on [Keep A Changelog](https://keepachangelog.com/en/1.0.0).
 
-## 3.21.0 -- 2023-01-17
+## 3.21.4 --- 2023-05-04
+
+### Added
+
+- `passetClassDataValueOf` and `passetClassDataValueOfT` to look up the amount 
+  of a value corresponding to a `PAssetClassData`.
+
+- `phasOneTokenOfAssetClassData` function for checking that a `PValue` contains
+  exactly one of a `PAssetClassData`.
+
+## 3.21.3 -- 2023-03-28
+
+- Add `PTryFrom PData` instance for `PAssetClassData`
+
+## 3.21.2 -- 2023-02-15
+
+### Fixed
+
+- Fix `pgetFullyBoundedTimeRange` always returns nothing
+
+## 3.21.1 -- 2023-01-27
+
+### Modified
+
+- `pguardShowC` is deprecated, due to its on-chain impact for size.
+
+## 3.21.0 -- 2023-01-27
 
 ### Modified 
 
 - 'Plutarch.Extra.Value': 'phasOnlyOneTokenOfCurrencySymbol' now correctly
   disallows negative tokens when ensuring presence of only one token.
+
+### Added
+
+- `pwithStateThreadMulti` and `withStateThreadMulti` policies allowing
+  to mint more than one state thread token
 
 ## 3.20.2 -- 2022-12-10
 
